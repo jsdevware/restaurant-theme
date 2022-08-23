@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/scrollFunction.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <span id="top"></span>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand" href="index.html" title="Home"><h1 id="logo">Restaurant</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navigation">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="chefs.html">Our Chefs</a></li>
+                            <li><a class="dropdown-item" href="food-menu.html">Our Food Menu</a></li>
+                            <li><a class="dropdown-item" href="reservation.html">Reservation</a></li>
+                            <li><a class="dropdown-item" href="cart.html">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-glass booking" href="reservation.html">Book A Table</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-phone my-2"><a href="tel:+012 (345) 6789"><i class="bi bi-telephone-fill text-var"></i> +012 (345) 6789</a></div>
+        </div>
+    </nav>
+</header>
+                    <!-- banner section -->
+<section id="banner">
+    <div class="container">
+        <div class="row flex-md-row-reverse">
+            <div class="col-lg-6 text-center">
+                <div class="banner-image">
+                    <img src="img/banner-image.png" alt="Fast Food" width="80%">
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="text my-5">
+                    <h1>QUALITY <br> FOODS</h1>
+                    <p class="px-5">Consectetur adipisicing elit. Officia sint corporis saepe officiis odit quas obcaecati qui eveniet nemo consequatur earum rem, sit nam quae voluptatum odio sit minima eos dolor sit amet odit quas obcaecation</p>
+                    <a href="food-menu.html" class="btn-slice-border">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <b>EXPLORE OUR MENU <i class="bi bi-arrow-right"></i></b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- end banner section -->
+
+                    <!-- about section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 img-wrapper">
+                <div class="imageOne scroll-element js-scroll fade-in-right">
+                    <img src="img/about-1.jpg" alt="Noodles">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text">
+                <div class="secTitle scroll-element js-scroll zoom-in">
+                    <h1>WHY CHOOSE US</h1>
+                    <h2>ABOUT</h2>
+                </div>
+                <p class="text-center mb-5">Healthy foods for you and family</p>
+                <p class="desc">Obcaecati tenetur rem quos cumque! Voluptatem eius totam, odit ipsum explicabo, quaerat aliquid exercitationem veritatis voluptates asperiores vitae consectetur molestiae sapiente. Voluptas itaque, voluptatum at enim impedit accusantium corporis, officia quas veritatis totam quos adipisci quod fugit modi quasi obcaecati, nemo expedita..... <a href="about.html" class="text-var">More About Us</a></p>
+                <img src="img/about-chef.jpg" alt="chef" style="border-radius: 50%; width: 50px;"> <span style="font-family: splash; font-weight: bold; font-size: 150%; color: #777;">John Doe</span>
+            </div>
+            <div class="col-lg-4 img-wrapper">
+                <div class="imageTwo float-end scroll-element js-scroll fade-in-left">
+                    <img src="img/about-2.jpg" alt="Noodles">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- end about section -->
+
+                    <!-- category section -->
+<section id="category">
+    <div class="container text-center">
+        <div class="secTitle scroll-element js-scroll zoom-in">
+            <h1>BEST CATEGORY</h1>
+            <h2>CATEGORY</h2>
+        </div>
+        <p class="text-center mb-5">Healthy foods for you and family</p>
+        <div class="row flex-md-row-reverse">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="shop.html">Burger</a></li>
+                    <li><a href="shop.html">Pizza</a></li>
+                    <li><a href="shop.html">Chicken</a></li>
+                    <li><a href="shop.html">Sea Fish</a></li>
+                    <li><a href="shop.html">Energy Drinks</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="scroll-element js-scroll fade-in"><img src="img/category.jpg" alt="Fast Foods" width="50%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- end category section -->
+
+                    <!-- offer section -->
+<section id="offer">
+    <div class="container">
+        <div class="secTitle scroll-element js-scroll zoom-in">
+            <h1>TRY OUR SPECIAL OFFERS</h1>
+            <h2>OFFERS</h2>
+        </div>
+        <p class="text-center mb-5">Healthy foods for you and family</p>
+        <div class="row">
+            <div class="col-lg-6 p-2">
+                <div class="card my-2 scroll-element js-scroll slide-in-right">
+                    <div class="card-body">
+                        <h3>Sea Fish Package</h3>
+                        <p>Avocado, butternut, lime</p>
+                        <h1 class="price">$55</h1>
+                    </div>
+                </div>
+                <div class="card my-2 scroll-element js-scroll slide-in-right">
+                    <div class="card-body">
+                        <h3>Sea Fish Package</h3>
+                        <p>Avocado, butternut, lime</p>
+                        <h1 class="price">$86</h1>
+                    </div>
+                </div>
+                <div class="card my-2 scroll-element js-scroll slide-in-right">
+                    <div class="card-body">
+                        <h3>Sea Fish Package</h3>
+                        <p>Avocado, butternut, lime</p>
+                        <h1 class="price">$22</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-2">
+                <div class="card my-2 scroll-element js-scroll slide-in-left">
+                    <div class="card-body">
+                        <h3>Sea Fish Package</h3>
+                        <p>Avocado, butternut, lime</p>
+                        <h1 class="price">$67</h1>
+                    </div>
+                </div>
+                <div class="card my-2 scroll-element js-scroll slide-in-left">
+                    <div class="card-body">
+                        <h3>Sea Fish Package</h3>
+                        <p>Avocado, butternut, lime</p>
+                        <h1 class="price">$34</h1>
+                    </div>
+                </div>
+                <div class="card my-2 scroll-element js-scroll slide-in-left">
+                    <div class="card-body">
+                        <h3>Sea Fish Package</h3>
+                        <p>Avocado, butternut, lime</p>
+                        <h1 class="price">$43</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- end offer section -->
+
+                    <!-- content box section -->
+<section id="contentBox">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 p-4 box scroll-element js-scroll slide-in-top">
+                <img src="img/diet.png" alt="Healthy Foods">
+                <h3>Fresh Food</h3>
+                <p>Suscipit neque esse nesciunt architecto id itaque dolor sit amet</p>
+                <a href="about.html"><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 box scroll-element js-scroll slide-in-top">
+                <img src="img/delivery-man.png" alt="Delivery Man">
+                <h3>Home Delivery</h3>
+                <p>Suscipit neque esse nesciunt architecto id itaque dolor sit amet</p>
+                <a href="about.html"><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 box scroll-element js-scroll slide-in-top">
+                <img src="img/dollar.png" alt="Dollar">
+                <h3>Low Costs</h3>
+                <p>Suscipit neque esse nesciunt architecto id itaque dolor sit amet</p>
+                <a href="about.html"><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 box scroll-element js-scroll slide-in-top">
+                <img src="img/balloons.png" alt="Party Ballons">
+                <h3>Event and Party</h3>
+                <p>Suscipit neque esse nesciunt architecto id itaque dolor sit amet</p>
+                <a href="about.html"><i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- end content box section -->
+
+                    <!-- blog section -->
+<section id="blog">
+    <div class="container">
+        <div class="secTitle scroll-element js-scroll zoom-in">
+            <h1>LATEST EVENTS</h1>
+            <h2>EVENTS</h2>
+        </div>
+        <p class="text-center mb-5">Healthy foods for you and family</p>
+        <div class="marquee">
+            <ul class="marquee-content">
+                <li>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/blog-1.jpg" alt="Party" width="100%">
+                            <span class="date">25 June, 2022</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/avatar.png" alt="Avatar" width="40px"> <span> John Smith</span>
+                            <h3 class="mt-3">Business Conference</h3>
+                            <p>Atque accusamus dicta nobis voluptate deserunt rem quae fugit odit unde nostrum</p>
+                            <a href="blog.html">Join Events</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/blog-2.jpg" alt="Party" width="100%">
+                            <span class="date">25 June, 2022</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/avatar-woman.png" alt="Avatar" width="40px"> <span> Merry Smith</span>
+                            <h3 class="mt-3">Design Workshop</h3>
+                            <p>Atque accusamus dicta nobis voluptate deserunt rem quae fugit odit unde nostrum</p>
+                            <a href="blog.html">Join Events</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/blog-3.jpg" alt="Party" width="100%">
+                            <span class="date">25 June, 2022</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/avatar.png" alt="Avatar" width="40px"> <span> John Smith</span>
+                            <h3 class="mt-3">Wedding Ceremony</h3>
+                            <p>Atque accusamus dicta nobis voluptate deserunt rem quae fugit odit unde nostrum</p>
+                            <a href="blog.html">Join Events</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/blog-4.jpg" alt="Party" width="100%">
+                            <span class="date">25 June, 2022</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/avatar-woman.png" alt="Avatar" width="40px"> <span> Merry Smith</span>
+                            <h3 class="mt-3">Birthday Ceremony</h3>
+                            <p>Atque accusamus dicta nobis voluptate deserunt rem quae fugit odit unde nostrum</p>
+                            <a href="blog.html">Join Events</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/blog-5.jpg" alt="Party" width="100%">
+                            <span class="date">25 June, 2022</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/avatar.png" alt="Avatar" width="40px"> <span> John Smith</span>
+                            <h3 class="mt-3">Annual Party</h3>
+                            <p>Atque accusamus dicta nobis voluptate deserunt rem quae fugit odit unde nostrum</p>
+                            <a href="blog.html">Join Events</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                    <!-- end blog section -->
+
+                    <!-- feedback section -->
+<section id="feedback">
+    <div class="container">
+        <div class="secTitle scroll-element js-scroll zoom-in">
+            <h1>CUSTOMER'S FEEDBACK</h1>
+            <h2>REVIEWS</h2>
+        </div>
+        <p class="text-center mb-5">Healthy foods for you and family</p>
+        <div class="row">
+			<div class="col-lg-8 col-md-12 mx-auto text-center">
+				<div id="carousel-button" class="carousel slide" data-bs-ride="carousel"> 
+					<h1><i class="bi bi-quote text-var"></i></h1>
+						<!-- The slideshow/carousel -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<p>Consectetur adipisicing elit. Necessitatibus provident consequatur a nemo quidem omnis reprehenderit inventore cupiditate ea, commodi aperiam, itaque dolores perferendis in nisi minima! Hic, iusto fugit</p>
+                            <img src="img/avatar.png" alt="Avatar" width="50px">
+							<h3 class="text-var">Robert Smith</h3> <p>Professor</p>
+						</div>
+                        <div class="carousel-item">
+							<p>Consectetur adipisicing elit. Necessitatibus provident consequatur a nemo quidem omnis reprehenderit inventore cupiditate ea, commodi aperiam, itaque dolores perferendis in nisi minima! Hic, iusto fugit</p>
+                            <img src="img/avatar-woman.png" alt="Avatar" width="50px">
+							<h3 class="text-var">Merry Smith</h3> <p>Doctor</p>
+						</div>
+                        <div class="carousel-item">
+							<p>Consectetur adipisicing elit. Necessitatibus provident consequatur a nemo quidem omnis reprehenderit inventore cupiditate ea, commodi aperiam, itaque dolores perferendis in nisi minima! Hic, iusto fugit</p>
+                            <img src="img/avatar.png" alt="Avatar" width="50px">
+							<h3 class="text-var">John Doe</h3> <p>Engineer</p>
+						</div>
+                        <div class="carousel-item">
+							<p>Consectetur adipisicing elit. Necessitatibus provident consequatur a nemo quidem omnis reprehenderit inventore cupiditate ea, commodi aperiam, itaque dolores perferendis in nisi minima! Hic, iusto fugit</p>
+                            <img src="img/avatar-woman.png" alt="Avatar" width="50px">
+							<h3 class="text-var">Lara</h3> <p>Student</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+                    <!-- end feedback section -->
+
+                    <!-- booking section -->
+<section id="booking">
+    <div class="container">
+        <div class="secTitle scroll-element js-scroll zoom-in">
+            <h1>BOOKING YOUR FAVOURITE TABLE</h1>
+            <h2>BOOKING</h2>
+        </div>
+        <p class="text-center mb-5">Healthy foods for you and family</p>
+        <div class="row border">
+            <div class="col-md-12 p-5">
+                <div class="row formWrapper">
+                    <div class="col-md-6 p-3 form scroll-element js-scroll slide-in-right">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-people"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Persons" aria-label="Persons" aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-3 form scroll-element js-scroll slide-in-left">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar3"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Date of Booking" aria-label="booking" aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-3 form scroll-element js-scroll slide-in-right">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-clock"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Hour(s)" aria-label="hour" aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-3 form scroll-element js-scroll slide-in-left">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-phone"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="phone" aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <div class="my-5 text-center"><a href="reservation.html" class="btn-glass">Booking Now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- end booking section -->
+
+                    <!-- partners section -->
+<div id="partners">
+    <div class="container">
+        <div class="marquee">
+            <ul class="marquee-content">
+                <li><img src="img/logo-slide-1.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-2.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-3.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-4.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-5.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-6.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-7.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-8.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-9.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-1.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-2.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-3.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-4.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-5.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-6.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-7.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-8.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-9.png" alt="Logo"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+                    <!-- end partners section -->
+
+                    <!-- footer section -->
+<footer>
+    <div class="container py-5">
+        <div class="row my-3">
+            <div class="col-lg-3 col-md-6 p-4 contact">
+                <h3>Contact</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 56 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p>
+                <p><i class="bi bi-envelope-open-fill"></i> <a href="mailto:sample@gmail.com">sample@gmail.com</a></p>
+                <p><i class="bi bi-telephone-fill"></i> <a href="tel:+012 (345) 67 899">+012 (345) 67 899</a></p>
+                <p><i class="bi bi-clock-fill"></i> 07 am - 04 pm</p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 facilities">
+                <h3>Facilities</h3>
+                <p><a href="#">The Fontus Spa</a></p>
+                <p><a href="#">Experiences</a></p>
+                <p><a href="#">Private Functions</a></p>
+                <p><a href="#">Gallery, Events</a></p>
+                <p><a href="#">Special Offers</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 links">
+                <h3>Useful Links</h3>
+                <p><a href="about.html">Our Story</a></p>
+                <p><a href="chefs.html">Our Chefs</a></p>
+                <p><a href="food-menu.html">Food Lists</a></p>
+                <p><a href="reservation.html">Reservation</a></p>
+                <p><a href="blog.html">Blog</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 newsletter">
+                <h3>Newsletters</h3>
+                <p>Veniam sunt eum deleniti sit blanditiis quisquam sapiente totam qui</p>
+                <div class="input-group mt-4">
+                    <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="email" aria-describedby="basic-addon1" required>
+                    <div class="input-group-prepend">
+                        <a href="#" onclick="confirm('Do You Want To Subscribe Us?')">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goToTop text-center">
+            <a href="#top" title="Go to Top"><img src="img/spoon.png" alt="Spoon" width="70px"></a>
+        </div>
+    </div>
+</footer>
+<div class="bottomContent row flex-md-row-reverse text-center pt-5 pb-2">
+    <div class="col-md-6 social">
+        <ul>
+            <li><a href="https://facebook.com" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://twitter.com" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://youtube.com" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://linkedin.com" title="Linkedin"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div class="copyright"><h6>Copyright © 2022. Restaurant Theme</h6></div>
+    </div>
+</div>
+                    <!-- end footer section -->
+</body>
+</html>
+
+
+
+                <!---- js code start here ---->
+<script>
+
+            //marquee function
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+for(let img=0; img<marqueeElementsDisplayed; img++) {
+marqueeContent.appendChild(marqueeContent.children[img].cloneNode(true));
+};
+
+            //scroll function
+const scrollElements = document.querySelectorAll(".js-scroll");
+const elementInView = (el, dividend = 0.25) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+	elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+	);
+};
+const elementOutofView = (el) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+	);
+};
+const displayScrollElement = (element) => {
+	element.classList.add("scrolled");
+};
+const hideScrollElement = (element) => {
+	element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+	scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+		displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+		hideScrollElement(el)
+    }
+  })
+}
+window.addEventListener("scroll", () => { 
+	handleScrollAnimation();
+});
+
+</script>

@@ -1,0 +1,53 @@
+/*	shadow button	*/
+.btn-shadow {
+	font-size: 20px;
+	font-weight: bold;
+	color: orange;
+	display: inline-block;
+	padding: 10px;
+	background: white;
+	border: 2px solid orange;
+	box-shadow: 5px 5px 0 orange,
+		-5px -5px 0 orange,
+		-5px 5px 0 orange,
+		5px -5px 0 orange;
+	transition: 500ms ease-in-out;
+}
+.btn-shadow:hover {color: gray; border-color: gray; box-shadow: 20px 5px 0 gray, -20px -5px 0 gray;}
+.btn-shadow:focus {outline: none;}
+
+/*	slice border button	*/
+.btn-slice-border {
+  display:inline-block;
+  position:relative;
+  font-size:18px;
+  text-align:center;
+  color: orange;
+  padding: 10px;
+}
+.btn-slice-border:hover {color: gray;}
+.btn-slice-border span {position:absolute; transition: transform 0.5s;}
+.btn-slice-border span:nth-child(1),
+.btn-slice-border span:nth-child(3){width:100%; height:2px; background:orange;}
+.btn-slice-border span:nth-child(1) {top:0; left:0; transform-origin: right;}
+.btn-slice-border:hover span:nth-child(1) {transform: scaleX(0); transform-origin: left; transition:transform .5s;}
+.btn-slice-border span:nth-child(3) {bottom:0; left:0; transform-origin: left;}
+.btn-slice-border:hover span:nth-child(3) {transform: scaleX(0); transform-origin: right; transition:transform .5s;}
+.btn-slice-border span:nth-child(2),
+.btn-slice-border span:nth-child(4){width:3px; height:100%; background:gray;}
+.btn-slice-border span:nth-child(2) {top:0; left:0; transform:scale(0); transform-origin: bottom;}
+.btn-slice-border:hover span:nth-child(2) {transform: scale(1); transform-origin: top; transition:transform .5s;}
+.btn-slice-border span:nth-child(4) {top:0; right:0; transform:scale(0); transform-origin: top;}
+.btn-slice-border:hover span:nth-child(4) {transform: scale(1); transform-origin: bottom; transition:transform .5s;}
+
+/*	glass button	*/
+.btn-glass {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, rgb(231, 191, 11) 5%, rgb(241, 224, 147) 6%, rgb(231, 191, 11) 9%, rgb(241, 224, 147) 10%, rgb(231, 191, 11) 17%, rgb(241, 224, 147) 19%, rgb(231, 191, 11) 21%) right center / 150%;
+  transition: all 0.5s ease 0s;
+}
+.btn-glass:hover {background-position: left;	color: #333;	box-shadow: inset 0px 3px 5px #333, 0px 0px 10px #ddd;}
+.btn-glass:focus {outline: none;} 

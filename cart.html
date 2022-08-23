@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Restaurant</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scrollFunction.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <span id="top"></span>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand" href="index.html" title="Home"><h1 id="logo">Restaurant</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navigation">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="chefs.html">Our Chefs</a></li>
+                            <li><a class="dropdown-item" href="food-menu.html">Our Food Menu</a></li>
+                            <li><a class="dropdown-item" href="reservation.html">Reservation</a></li>
+                            <li><a class="dropdown-item active" href="cart.html">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-glass booking" href="reservation.html">Book A Table</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-phone my-2"><a href="tel:+012 (345) 6789"><i class="bi bi-telephone-fill text-var"></i> +012 (345) 6789</a></div>
+        </div>
+    </nav>
+</header>
+
+                    <!-- banner section -->
+<section id="banner">
+    <div class="row">
+        <div class="col-12 my-5"><h1>Product Details</h1></div>
+    </div>
+</section>
+
+                    <!--breadcrumb-->
+<div class="breadcrumb-wrapper">
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><i class="bi bi-caret-right-fill px-2"></i></li>
+            <li class="active">Product Details</li>
+        </ul>
+    </div>
+</div>
+
+                    <!-- main section -->
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 px-3 py-2">
+                <div class="img-wrapper"><img src="img/fruit-juice.jpg" alt="fruit-juice" width="100%"></div>
+            </div>
+            <div class="col-lg-6 px-3 py-2">
+                <div class="text">
+                    <h1 class="text-var">Fruit Juice</h1>
+                    <h3 class="text-muted">$59.58</h3>
+                    <p>Provident repudiandae ea fugiat optio impedit qui, sapiente, obcaecati quo aliquid necessitatibus architecto velit nesciunt? Voluptatem quod labore obcaecati ipsum magni, consequuntur quaerat atque quisquam quidem deserunt aliquam voluptates ad quis hic nesciunt maxime fugiat qui aspernatur tempora? A quis voluptates cum.</p>
+                    <p>Category : <a href="#">Organic Juice</a></p>
+                    <p>Tags : <a href="#">Fruits </a>, <a href="#">Juice </a>, <a href="#">Drink</a></p>
+                    <a href="#" class="btn-shadow">ADD TO CART</a> <a href="#" class="ms-5 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                </div>
+            </div>
+            <div class="col-12 px-3 py-5">
+                <h3 class="text-var">Description</h3>
+                <p>Quae reiciendis numquam voluptate, aliquam alias voluptatem porro, ducimus neque maxime delectus aspernatur quidem illo! Illum nihil dolores aspernatur! Doloremque nesciunt laudantium, culpa debitis repudiandae quas ipsam iste asperiores ut vitae et repellat consectetur itaque, laborum eos ipsum quod dolorum ab nobis. Provident repudiandae ea fugiat optio impedit qui, sapiente, obcaecati quo aliquid necessitatibus architecto velit nesciunt? Voluptatem quod labore obcaecati ipsum magni, consequuntur quaerat atque quisquam quidem deserunt aliquam voluptates ad quis hic nesciunt maxime fugiat qui aspernatur tempora? A quis voluptates cum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <!-- review section -->
+<section id="review">
+    <div class="container">
+        <h3 class="text-var mb-3">Peoples Reviews</h3>
+        <div class="item-wrapper py-2 scroll-element js-scroll slide-in-left">
+            <div class="item p-2"><img src="img/avatar.png" alt="Avatar" width="100px"></div>
+            <div class="item p-2">
+                <h5>John F. Medina</h5>
+                <h6>20 July, 2022</h6>
+                <p>Dicta dolorem, blanditiis fugit illo possimus suscipit qui molestias vel officia pariatur, voluptas, magnam perspiciatis perferendis nisi accusamus eius? Sed, rerum! Minima.</p>
+                <a href="#" class="text-var">Reply <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="item-wrapper py-2 scroll-element js-scroll slide-in-right">
+            <div class="item p-2"><img src="img/avatar-woman.png" alt="Avatar" width="100px"></div>
+            <div class="item p-2">
+                <h5>Jeffrey T. Kelly</h5>
+                <h6>20 July, 2022</h6>
+                <p>Dicta dolorem, blanditiis fugit illo possimus suscipit qui molestias vel officia pariatur, voluptas, magnam perspiciatis perferendis nisi accusamus eius? Sed, rerum! Minima.</p>
+                <a href="#" class="text-var">Reply <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="item-wrapper py-2 scroll-element js-scroll slide-in-left">
+            <div class="item p-2"><img src="img/avatar.png" alt="Avatar" width="100px"></div>
+            <div class="item p-2">
+                <h5>Richard Zellmer</h5>
+                <h6>20 July, 2022</h6>
+                <p>Dicta dolorem, blanditiis fugit illo possimus suscipit qui molestias vel officia pariatur, voluptas, magnam perspiciatis perferendis nisi accusamus eius? Sed, rerum! Minima.</p>
+                <a href="#" class="text-var">Reply <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+        <h3 class="text-var">Leave Your Review</h3>
+        <div class="row form-wrapper">
+            <div class="col-md-4 p-3">
+                <input type="text" class="form-control p-3" placeholder="Your Name" aria-label="name" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="col-md-4 p-3">
+                <input type="text" class="form-control p-3" placeholder="Phone Number" aria-label="phone" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="col-md-4 p-3">
+                <input type="email" class="form-control p-3" placeholder="Your Email" aria-label="email" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="col-12 p-3">
+                <input type="text" class="form-control p-3" placeholder="Subject" aria-label="subject" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="col-12 p-3 mb-3">
+                <textarea id="message" name="message" rows="5" placeholder="Write Message" tabindex="4" aria-required="true" class="valid p-3" style="width: 100%"></textarea>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#" onclick="alert('Thank You For Your Feedback')" class="btn-slice-border">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <b>SEND YOUR FEEDBACK</b>
+            </a>
+        </div>
+    </div>
+</section>
+
+                    <!-- products section -->
+<section id="products">
+    <div class="container">
+        <div class="secTitle scroll-element js-scroll zoom-in">
+            <h1>RELATED PRODUCTS</h1>
+            <h2>RELATED</h2>
+        </div>
+        <p class="text-center mb-5">Healthy foods for you and family</p>
+        <div class="row">
+            <div class=" col-lg-3 col-md-6 p-2">
+                <div class="card scroll-element js-scroll slide-in-top">
+                    <div class="img-wrapper">
+                        <img src="img/product-7.jpg" alt="Avatar">
+                        <div class="overlay">
+                            <div class="text">
+                                <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-4 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-var">Cold Drinks</h4>
+                        <h5 class="text-muted">$23.44</h5>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 p-2">
+                <div class="card scroll-element js-scroll slide-in-top">
+                    <div class="img-wrapper">
+                        <img src="img/product-3.jpg" alt="Avatar">
+                        <div class="overlay">
+                            <div class="text">
+                                <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="" class="ms-4 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-var">Burger</h4>
+                        <h5 class="text-muted">$23.44</h5>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 p-2">
+                <div class="card scroll-element js-scroll slide-in-top">
+                    <div class="img-wrapper">
+                        <img src="img/product-4.jpg" alt="Avatar">
+                        <div class="overlay">
+                            <div class="text">
+                                <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-4 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-var">Orange Juice</h4>
+                        <h5 class="text-muted">$23.44</h5>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 p-2">
+                <div class="card scroll-element js-scroll slide-in-top">
+                    <div class="img-wrapper">
+                        <img src="img/product-6.jpg" alt="Avatar">
+                        <div class="overlay">
+                            <div class="text">
+                                <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-4 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-var">Deva Cake</h4>
+                        <h5 class="text-muted">$23.44</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <!-- partners section -->
+<div id="partners" style="background: #fffcf6;">
+    <div class="container">
+        <div class="marquee">
+            <ul class="marquee-content">
+                <li><img src="img/logo-slide-1.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-2.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-3.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-4.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-5.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-6.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-7.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-8.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-9.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-1.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-2.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-3.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-4.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-5.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-6.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-7.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-8.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-9.png" alt="Logo"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    <!-- footer section -->
+<footer>
+    <div class="container py-5">
+        <div class="row my-3">
+            <div class="col-lg-3 col-md-6 p-4 contact">
+                <h3>Contact</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 56 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p>
+                <p><i class="bi bi-envelope-open-fill"></i> <a href="mailto:sample@gmail.com">sample@gmail.com</a></p>
+                <p><i class="bi bi-telephone-fill"></i> <a href="tel:+012 (345) 67 899">+012 (345) 67 899</a></p>
+                <p><i class="bi bi-clock-fill"></i> 07 am - 04 pm</p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 facilities">
+                <h3>Facilities</h3>
+                <p><a href="#">The Fontus Spa</a></p>
+                <p><a href="#">Experiences</a></p>
+                <p><a href="#">Private Functions</a></p>
+                <p><a href="#">Gallery, Events</a></p>
+                <p><a href="#">Special Offers</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 links">
+                <h3>Useful Links</h3>
+                <p><a href="about.html">Our Story</a></p>
+                <p><a href="chefs.html">Our Chefs</a></p>
+                <p><a href="food-menu.html">Food Lists</a></p>
+                <p><a href="reservation.html">Reservation</a></p>
+                <p><a href="blog.html">Blog</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 newsletter">
+                <h3>Newsletters</h3>
+                <p>Veniam sunt eum deleniti sit blanditiis quisquam sapiente totam qui</p>
+                <div class="input-group mt-4">
+                    <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="email" aria-describedby="basic-addon1" required>
+                    <div class="input-group-prepend">
+                        <a href="#" onclick="confirm('Do You Want To Subscribe Us?')">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goToTop text-center">
+            <a href="#top" title="Go to Top"><img src="img/spoon.png" alt="Spoon" width="70px"></a>
+        </div>
+    </div>
+</footer>
+<div class="bottomContent row flex-md-row-reverse text-center pt-5 pb-2">
+    <div class="col-md-6 social">
+        <ul>
+            <li><a href="https://facebook.com" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://twitter.com" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://youtube.com" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://linkedin.com" title="Linkedin"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div class="copyright"><h6>Copyright © 2022. Restaurant Theme</h6></div>
+    </div>
+</div>
+                    <!-- end footer section -->
+</body>
+</html>
+
+
+
+                    <!---- js code start here ---->
+
+<script>
+
+            //marquee function
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+for(let img=0; img<marqueeElementsDisplayed; img++) {
+marqueeContent.appendChild(marqueeContent.children[img].cloneNode(true));
+};
+
+            //scroll function
+const scrollElements = document.querySelectorAll(".js-scroll");
+const elementInView = (el, dividend = 0.25) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+	elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+	);
+};
+const elementOutofView = (el) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+	);
+};
+const displayScrollElement = (element) => {
+	element.classList.add("scrolled");
+};
+const hideScrollElement = (element) => {
+	element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+	scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+		displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+		hideScrollElement(el)
+    }
+  })
+}
+window.addEventListener("scroll", () => { 
+	handleScrollAnimation();
+});
+
+</script>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Restaurant</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <span id="top"></span>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand" href="index.html" title="Home"><h1 id="logo">Restaurant</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navigation">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="chefs.html">Our Chefs</a></li>
+                            <li><a class="dropdown-item" href="food-menu.html">Our Food Menu</a></li>
+                            <li><a class="dropdown-item" href="reservation.html">Reservation</a></li>
+                            <li><a class="dropdown-item" href="cart.html">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-glass booking" href="reservation.html">Book A Table</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-phone my-2"><a href="tel:+012 (345) 6789"><i class="bi bi-telephone-fill text-var"></i> +012 (345) 6789</a></div>
+        </div>
+    </nav>
+</header>
+
+                    <!-- banner section -->
+<section id="banner">
+    <div class="row">
+        <div class="col-12 my-5"><h1>Our Shop</h1></div>
+    </div>
+</section>
+
+                    <!--breadcrumb-->
+<div class="breadcrumb-wrapper">
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><i class="bi bi-caret-right-fill px-2"></i></li>
+            <li class="active">Shop</li>
+        </ul>
+    </div>
+</div>
+
+                    <!-- main section -->
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 p-2">
+                <!-- search bar -->
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Search Product" aria-label="search" aria-describedby="basic-addon1" required="">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text p-3" id="basic-addon1"><i class="bi bi-search"></i></span>
+                    </div>
+                </div>
+                <!-- menu list-->
+                <div class="card p-4 my-4 menu-list">
+                    <h4 class="text-muted">Menu List</h4>
+                    <ul>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Vegateble Burger</a></li>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Chicken Soup</a></li>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Navana Cakes</a></li>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Black Coffee</a></li>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Organic Juice</a></li>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Sea Fish Fry</a></li>
+                        <li><a href="food-menu.html"><i class="bi bi-arrow-right-short"></i> Noodles</a></li>
+                    </ul>
+                </div>
+                <img src="img/fruit-juice.jpg" alt="Fruite Juice" width="100%">
+                <!-- price range -->
+                <div class="card my-4 p-4">
+                    <h4 class="text-muted">Filter By Price</h4>
+                    <div class="slidecontainer my-3">
+                        <input type="range" min="10" max="500" value="10" class="slider" id="range">
+                    </div>
+                    <h5>$<span id="rangeValue"></span> - $500</h5>
+                </div>
+                <!-- tag list -->
+                <div class="card p-4 tag-list">
+                    <h4 class="text-muted">Popular Tags</h4>
+                    <ul>
+                        <li><a href="cart.html" class="active">Pizza</a></li>
+                        <li><a href="cart.html">Foods</a></li>
+                        <li><a href="cart.html">Burger</a></li>
+                        <li><a href="cart.html">Coffee</a></li>
+                        <li><a href="cart.html">Fish</a></li>
+                        <li><a href="cart.html">Pasta</a></li>
+                        <li><a href="cart.html">Organic</a></li>
+                        <li><a href="cart.html">Chicken</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- products -->
+            <div class="col-lg-9 p-2 products">
+                <h5 class="text-muted">12 of 20 results are showing</h5>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-1.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Crab</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-2.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Fish</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-3.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Burger</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-4.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Juice</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-5.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Ice Cream</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-6.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Cake</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-7.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Coca Cola</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-8.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Juice</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-9.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Pizza</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-10.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Coffee</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-11.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Fish</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-2">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="img/product-12.jpg" alt="Avatar">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <a href="cart.html" class="btn-glass">ADD TO CART</a> <a href="#" class="ms-3 favourite" title="Add To Favourite"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="text-var">Shrimp</h4>
+                                <h5 class="text-muted">$23.44</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination my-5">
+                        <ul class="mx-auto">
+                            <li><a href="#" class="icon"><i class="bi bi-caret-left"></i></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#" class="icon"><i class="bi bi-caret-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <!-- partners section -->
+<div id="partners" style="background: #fffcf6;">
+    <div class="container">
+        <div class="marquee">
+            <ul class="marquee-content">
+                <li><img src="img/logo-slide-1.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-2.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-3.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-4.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-5.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-6.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-7.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-8.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-9.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-1.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-2.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-3.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-4.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-5.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-6.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-7.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-8.png" alt="Logo"></li>
+                <li><img src="img/logo-slide-9.png" alt="Logo"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    <!-- footer section -->
+<footer>
+    <div class="container py-5">
+        <div class="row my-3">
+            <div class="col-lg-3 col-md-6 p-4 contact">
+                <h3>Contact</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 56 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p>
+                <p><i class="bi bi-envelope-open-fill"></i> <a href="mailto:sample@gmail.com">sample@gmail.com</a></p>
+                <p><i class="bi bi-telephone-fill"></i> <a href="tel:+012 (345) 67 899">+012 (345) 67 899</a></p>
+                <p><i class="bi bi-clock-fill"></i> 07 am - 04 pm</p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 facilities">
+                <h3>Facilities</h3>
+                <p><a href="#">The Fontus Spa</a></p>
+                <p><a href="#">Experiences</a></p>
+                <p><a href="#">Private Functions</a></p>
+                <p><a href="#">Gallery, Events</a></p>
+                <p><a href="#">Special Offers</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 links">
+                <h3>Useful Links</h3>
+                <p><a href="about.html">Our Story</a></p>
+                <p><a href="chefs.html">Our Chefs</a></p>
+                <p><a href="food-menu.html">Food Lists</a></p>
+                <p><a href="reservation.html">Reservation</a></p>
+                <p><a href="blog.html">Blog</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4 newsletter">
+                <h3>Newsletters</h3>
+                <p>Veniam sunt eum deleniti sit blanditiis quisquam sapiente totam qui</p>
+                <div class="input-group mt-4">
+                    <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="email" aria-describedby="basic-addon1" required>
+                    <div class="input-group-prepend">
+                        <a href="#" onclick="confirm('Do You Want To Subscribe Us?')">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goToTop text-center">
+            <a href="#top" title="Go to Top"><img src="img/spoon.png" alt="Spoon" width="70px"></a>
+        </div>
+    </div>
+</footer>
+<div class="bottomContent row flex-md-row-reverse text-center pt-5 pb-2">
+    <div class="col-md-6 social">
+        <ul>
+            <li><a href="https://facebook.com" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://twitter.com" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://youtube.com" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://linkedin.com" title="Linkedin"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div class="copyright"><h6>Copyright © 2022. Restaurant Theme</h6></div>
+    </div>
+</div>
+                    <!-- end footer section -->
+</body>
+</html>
+
+
+
+                    <!---- js code start here ---->
+
+<script>
+
+            //marquee function
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+for(let img=0; img<marqueeElementsDisplayed; img++) {
+marqueeContent.appendChild(marqueeContent.children[img].cloneNode(true));
+};
+
+            //range slider function
+var slider = document.getElementById("range");
+var output = document.getElementById("rangeValue");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+</script>
