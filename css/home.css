@@ -6,6 +6,8 @@
 
 * {padding: 0; margin: 0; box-sizing: border-box; transition: all 0.3s; letter-spacing: 1px;}
 
+body { font-family: 'Ubuntu', sans-serif; color: #444; overflow-x: hidden;}
+
 ::selection {color: #333; background-color: orange;}
 
 .text-var {color: orange;}
@@ -22,8 +24,6 @@ a {text-decoration: none; color: #1D1D1D;}
 p {text-align: justify; line-height: 35px;}
 
 ul {list-style-type: none;}
-
-body { font-family: 'Ubuntu', sans-serif; color: #444;}
 
 .secTitle {text-align: center;}
   .secTitle h2 {
@@ -214,7 +214,7 @@ footer {background: url(../img/footerBg.svg); background-repeat: no-repeat; back
 @media (max-width: 425px) {
   :root {--marquee-elements-displayed:2;}
   .header-phone {display: none;}
-  section#banner .text h1 {font-size: 60px;}
+  section#banner .text h1 {font-size: 80px;}
   #booking .formWrapper {padding: 0px;}
   #booking .formWrapper .form  {padding: 0px;}
   #offer .card .price {right: 15px}
